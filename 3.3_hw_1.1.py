@@ -5,7 +5,7 @@ from pprint import pprint
 with open('recipes.txt', 'rt', encoding='utf-8') as file:
     cook_book = {}
     for line in file:
-        dishes_name = line.strip().replace('\ufeff', '')
+        dishes_name = line.strip().replace('\ufeff', '') # Избавляюсь от BOM, не знаю откуда оно берется
         count_dishes = int(file.readline().strip())
         ingridients_list = []
         for _ in range(count_dishes):
@@ -20,6 +20,7 @@ with open('recipes.txt', 'rt', encoding='utf-8') as file:
 
     # pprint(cook_book, sort_dicts=False)
 
+print()
 print('Проверяем полученный словарь из файла:')
 print(cook_book)
 print()
@@ -30,9 +31,7 @@ with open('recipes_dict.txt', 'w', encoding='utf-8') as file:
     for key,val in cook_book.items():
         file.write('{}:{}\n'.format(key,val))
 
-
 # функция для пересчета рецепта в соответствие с нужным количеством персон
- 
 
 def get_shop_list_by_dishes(dishes, person_count):
     dishes_dict = {}
@@ -58,7 +57,4 @@ print()
 with open('dishes_dict.txt', 'w', encoding='utf-8') as file:
     for key,val in new_dict.items():
         file.write('{}:{}\n'.format(key,val))
-
-
-
-
+        
