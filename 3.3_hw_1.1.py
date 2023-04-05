@@ -31,7 +31,7 @@ with open('recipes_dict.txt', 'w', encoding='utf-8') as file:
     for key,val in cook_book.items():
         file.write('{}:{}\n'.format(key,val))
 
-# функция для пересчета рецепта в соответствие с нужным количеством персон
+# функция для пересчета рецепта в соответствие с нужным количеством блюд (делаем список)
 
 def get_shop_list_by_dishes(dishes, person_count):
     dishes_dict = {}
