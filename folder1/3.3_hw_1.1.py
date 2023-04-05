@@ -40,8 +40,6 @@ def get_shop_list_by_dishes(dishes, person_count):
             if d == dd:
                 for q in cook_book[dd]:
                     q['quantity'] *= person_count
-                    # if dishes_dict[q['ingredient_name']] in dishes_dict.keys():  # -- Не понимаю, почему не работает проверка, что блюдо уже в словаре? На случай, если один и тот же ингридиент есть в разных блюдах.
-                    #     continue
                     dishes_dict[q['ingredient_name']] = q
     # pprint(dishes_dict, sort_dicts=False)
     return dishes_dict
