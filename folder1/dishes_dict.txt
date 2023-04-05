@@ -1,0 +1,6 @@
+Картофель:{'ingredient_name': 'Картофель', 'quantity': 2, 'measure': 'кг'}
+Чеснок:{'ingredient_name': 'Чеснок', 'quantity': 6, 'measure': 'зубч'}
+Сыр гауда:{'ingredient_name': 'Сыр гауда', 'quantity': 200, 'measure': 'г'}
+Яйцо:{'ingredient_name': 'Яйцо', 'quantity': 4, 'measure': 'шт'}
+Молоко:{'ingredient_name': 'Молоко', 'quantity': 200, 'measure': 'мл'}
+Помидор:{'ingredient_name': 'Помидор', 'quantity': 4, 'measure': 'шт'}
